@@ -14,22 +14,130 @@
 
     <title>Frontend Mentor | Todo app</title>
 
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="./style/style.css" />
 
+    <!-- Script -->
     <script defer src="./js/script.js"></script>
   </head>
   <body>
-    Todo
+    <div class="todo">
+      <div class="todo__bachgroung">
+        <img
+          src="./images/bg-desktop-light.jpg"
+          alt="background image"
+          class="todo__backgroung-img"
+        />
+      </div>
 
-    <!-- Add dynamic number -->
-    items left All Active Completed Clear Completed Drag and drop to reorder
-    list
+      <div class="container">
+        <div class="todo__header">
+          <h1 class="todo__title">todo</h1>
+          <button class="todo__theme-btn">
+            <img
+              src="./images/icon-sun.svg"
+              alt="theme icon"
+              class="todo__theme-icon"
+            />
+          </button>
+        </div>
 
-    <div class="attribution">
+        <div class="todo__list-item">
+          <span class="todo__input-circle"></span>
+          <input
+            type="text"
+            class="todo__input"
+            placeholder="Create a new todo..."
+          />
+        </div>
+
+        <div class="todo__list">
+          <div class="todo__list-item todo__item--checked">
+            <div><span class="todo__item-circle">
+              <img
+                class="todo__item-circle-img"
+                src="./images/icon-check.svg"
+                alt="check icon"
+              />
+            </span>
+
+            <p class="todo__item-content">Complete online JavaScript course</p></div>
+            <button class="todo__item-close"></button>
+          </div>
+          
+        <div class="todo__list">
+          <div class="todo__list-item todo__item--checked">
+            <div><span class="todo__item-circle">
+              <img
+                class="todo__item-circle-img"
+                src="./images/icon-check.svg"
+                alt="check icon"
+              />
+            </span>
+
+            <p class="todo__item-content">Complete online JavaScript course</p></div>
+            <button class="todo__item-close"></button>
+          </div>
+          
+        <div class=" todo__list">
+          <div class="todo__list-item todo__item--checked">
+            <div><span class="todo__item-circle">
+              <img
+                class="todo__item-circle-img"
+                src="./images/icon-check.svg"
+                alt="check icon"
+              />
+            </span>
+
+            <p class="todo__item-content">Complete online JavaScript course</p></div>
+            <button class="todo__item-close"></button>
+          </div>
+          
+        <div class="todo__list">
+          <div class="todo__list-item todo__item--checked">
+            <div><span class="todo__item-circle">
+              <img
+                class="todo__item-circle-img"
+                src="./images/icon-check.svg"
+                alt="check icon"
+              />
+            </span>
+
+            <p class="todo__item-content">Complete online JavaScript course</p></div>
+            <button class="todo__item-close"></button>
+          </div>
+          
+          
+          
+
+          <div class="todo__list-end">
+            <p class="todo__reminde-number">5 item left</p>
+
+            <div class="todo__list-buttons">
+              <button class="todo__btn todo__btn--active todo__all-btn">
+                All
+              </button>
+              <button class="todo__btn todo__active-btn">Active</button>
+              <button class="todo__btn todo__completed-btn"></button>
+            </div>
+
+            <button class="todo__clear-btn">Clear Completed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>
