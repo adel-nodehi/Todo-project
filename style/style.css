@@ -274,18 +274,20 @@ body {
   background-color: inherit;
   font-family: inherit;
   border: none;
-  color: inherit;
+  color: hsl(235, 19%, 35%);
+  opacity: 0.7;
   cursor: pointer;
   transition: all 0.3s;
   text-transform: capitalize;
 }
 
 .todo__all-btn:hover {
-  color: hsl(235, 19%, 35%);
+  opacity: 1;
 }
 
 .todo__btn--active {
   color: hsl(220, 98%, 61%);
+  opacity: 0.95;
 }
 
 .todo__clear-btn {
