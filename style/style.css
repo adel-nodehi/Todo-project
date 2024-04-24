@@ -34,6 +34,11 @@
 
 - Weights: 400, 700 */
 
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url(../fonts/JosefinSans-VariableFont_wght.ttf) format('truetype');
+}
+
 :root {
   font-size: 62.5%;
 }
@@ -57,7 +62,7 @@ body {
 .todo {
   display: flex;
   justify-content: center;
-  padding-top: 5rem; /* #f00 */
+  padding-top: 9rem; /* #f00 */
   height: 100vh;
 }
 
@@ -77,7 +82,7 @@ body {
 }
 
 .container {
-  width: 50rem;
+  width: 80rem;
 }
 
 .todo__header {
@@ -147,6 +152,7 @@ body {
 }
 
 .todo__list {
+  background-color: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
@@ -240,6 +246,49 @@ body {
 .todo__item--checked .todo__item-content {
   opacity: 0.6;
   text-decoration: line-through;
+}
+
+.todo__list-end {
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(236, 9%, 61%);
+  font-size: 1.4rem;
+}
+
+.todo__reminde-number {
+}
+
+.todo__list-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.todo__btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.todo__all-btn {
+  background-color: inherit;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+
+.todo__all-btn:hover {
+  color: hsl(235, 19%, 35%);
+}
+
+.todo__btn--active {
+  color: hsl(220, 98%, 61%);
+}
+
+.todo__clear-btn {
 }
 
 .attribution {

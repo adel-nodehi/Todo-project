@@ -14,17 +14,11 @@
 
     <title>Frontend Mentor | Todo app</title>
 
-    <!-- Font -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    /> -->
-
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./style/style.css" />
 
     <!-- Script -->
-    <!-- <script defer src="./js/script.js"></script> -->
+    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <div class="todo">
@@ -58,110 +52,32 @@
         </div>
 
         <div class="todo__list">
-          <div class="todo__list-item todo__item--checked">
-            <div class="todo__content-wrapper">
-              <div class="todo__item-circle">
-                <img
-                  class="todo__item-circle-img"
-                  src="./images/icon-check.svg"
-                  alt="check icon"
-                />
-              </div>
-
-              <p class="todo__item-content">
-                Complete online JavaScript course
-              </p>
-            </div>
-            <button class="todo__item-close">
-              <img
-                class="todo__close-img"
-                src="./images/icon-cross.svg"
-                alt="close"
-              />
-            </button>
-          </div>
-
-          <div class="todo__list-item">
-            <div class="todo__content-wrapper">
-              <div class="todo__item-circle">
-                <img
-                  class="todo__item-circle-img"
-                  src="./images/icon-check.svg"
-                  alt="check icon"
-                />
-              </div>
-
-              <p class="todo__item-content">
-                Complete online JavaScript course
-              </p>
-            </div>
-            <button class="todo__item-close">
-              <img
-                class="todo__close-img"
-                src="./images/icon-cross.svg"
-                alt="close"
-              />
-            </button>
-          </div>
-
-          <div class="todo__list-item">
-            <div class="todo__content-wrapper">
-              <div class="todo__item-circle">
-                <img
-                  class="todo__item-circle-img"
-                  src="./images/icon-check.svg"
-                  alt="check icon"
-                />
-              </div>
-
-              <p class="todo__item-content">
-                Complete online JavaScript course
-              </p>
-            </div>
-            <button class="todo__item-close">
-              <img
-                class="todo__close-img"
-                src="./images/icon-cross.svg"
-                alt="close"
-              />
-            </button>
-          </div>
-
-          <div class="todo__list-item">
-            <div class="todo__content-wrapper">
-              <div class="todo__item-circle">
-                <img
-                  class="todo__item-circle-img"
-                  src="./images/icon-check.svg"
-                  alt="check icon"
-                />
-              </div>
-
-              <p class="todo__item-content">
-                Complete online JavaScript course
-              </p>
-            </div>
-            <button class="todo__item-close">
-              <img
-                class="todo__close-img"
-                src="./images/icon-cross.svg"
-                alt="close"
-              />
-            </button>
-          </div>
+          <div class="todo__list-container"></div>
 
           <div class="todo__list-end">
             <p class="todo__reminde-number">5 item left</p>
 
             <div class="todo__list-buttons">
-              <button class="todo__btn todo__btn--active todo__all-btn">
+              <button
+                class="todo__all-btn todo__btn btn__all todo__btn--active"
+              >
                 All
               </button>
-              <button class="todo__btn todo__active-btn">Active</button>
-              <button class="todo__btn todo__completed-btn"></button>
+              <button
+                class="todo__all-btn todo__btn btn__active todo__active-btn"
+              >
+                Active
+              </button>
+              <button
+                class="todo__all-btn todo__btn btn__completed todo__completed-btn"
+              >
+                completed
+              </button>
             </div>
 
-            <button class="todo__clear-btn">Clear Completed</button>
+            <button class="todo__all-btn todo__clear-btn">
+              Clear Completed
+            </button>
           </div>
         </div>
       </div>
